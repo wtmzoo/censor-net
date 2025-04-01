@@ -37,7 +37,7 @@ public static class Program
                 Regex.Replace(current, pattern, "[censored]", RegexOptions.IgnoreCase));
             
             File.WriteAllText(outputPath, censoredText, Encoding.UTF8);
-            Console.WriteLine($"Обработанный файл сохранен как: {outputPath}");
+            Console.WriteLine($"Файл сохранен как: {outputPath}");
         }
         catch (Exception ex)
         {
